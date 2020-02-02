@@ -13,7 +13,7 @@ Cacti Pink and Yellow Only: https://coolors.co/db3c6d-ebc205-0f0a0a-f5efed-2292a
 @media (min-width: 320px) and (max-width: 767px) {
   
   #welcome-section {
-    background-image: url(../media/wallpaper13.jpg) !important;
+    /* background-image: url(../media/wallpaper13.jpg) !important; */
   }
 
   #cover-page {
@@ -208,28 +208,30 @@ body {
   height: calc(var(--vh, 1vh) * 100); /*this + the related javascript prevent URL bar, etc. on mobile from influencing the height
   see: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/*/
 
-  /* Nice background styling example css at: http://themesindustry.com/html/wexim-2019/index-personal-portfolio.html */
-  background-image: url(../media/wallpaper11.jpg);
-  background-position: center bottom;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
   
 }
 
 #cover-page {
-  padding-top: 31vh;
+  height: 60vh;
+  width: 60vw;
+  padding: 0px;
 }
 
 #cover-details-container {
-  padding-top: 25px;
-  padding-bottom: 25px;
   border: 1px solid #0000001f;
   background: rgba(255, 255, 255, 0.57);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 9000px;
 }
 
-#cover-name-container {
+/* #cover-name-container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
@@ -243,7 +245,6 @@ body {
 }
 
 #header-name {
-  /* font-family: 'Josefin Sans', sans-serif; */
   font-size: 5rem;
   margin-bottom: 7px;
   line-height: 80%;
@@ -257,11 +258,23 @@ body {
 }
 
 #header-title {
-  /* font-family: 'Josefin Sans', sans-serif; */
   font-size: 1.5rem;
   margin-bottom: 0px;
   line-height: 80%;
   text-align: right;
+} */
+
+.cover-header-major {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 8rem;
+}
+
+.cover-header-minor {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 4rem;
+}
+
+#cover-rule {
 }
 
 section {
